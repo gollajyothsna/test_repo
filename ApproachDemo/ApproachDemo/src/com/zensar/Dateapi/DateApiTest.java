@@ -41,6 +41,7 @@ public class DateApiTest {
 		ZoneId zoneId = ZoneId.of("Australia/Melbourne");
 		localTime = LocalTime.now(zoneId);
 		System.out.println("Rome time: " + localTime);
+		System.out.println("Rome time: " + localTime);
 		
 	}
 

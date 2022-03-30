@@ -98,11 +98,6 @@ public class FruitUtils {
 		OptionalInt maxTrans1 = transactionList.stream().mapToInt(t -> t.getValue()).min();
 		System.out.println(maxTrans1.getAsInt());
 		
-		public static void highCaloriesFruits(List<Fruit> fruits) {
-			//1. Print all high calories Fruits(Calorie > 200) using partitioning.
-			Predicate<Fruit> predicate = p -> p.getCalories() > 200;
-			Map<Boolean, List<Fruit>> partitionedFruits = fruits.stream().collect(Collectors.partitioningBy(predicate));
-			System.out.println(partitionedFruits);
-		}
+		
 	}
 }
